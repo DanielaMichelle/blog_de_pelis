@@ -1,0 +1,209 @@
+/* ----------------------------variables---------------------------------------------- */
+
+:root {
+    --color-letter:#8f95a2;
+    --color-move: rgba(40, 44, 53, 0.9);
+    --color-black: #1e212a;
+    --color-section: #282c35;
+    --text:"Open Sans",Arial,sans-serif;
+}
+
+/* ------------------------header--------------------------------------------------- */
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: var(--color-black) ;
+    display: flex;
+    height: 48px;
+    width: 100%;
+    
+}
+
+header .logo {
+    background-color: #ec164f;
+    margin: 0px;
+    padding: 0px 45px 0px 40px;
+
+}
+
+.navigator ul {
+    display: flex;
+}
+
+.navigator ul li{
+    list-style: none;
+}
+
+.navigator ul li a {
+    color: var(--color-letter);
+    font-family: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.navigator ul div {
+    background-image: url('https://www.pinturaswesco.com/wp-content/themes/wescotheme/images/web/lupa-buscar-wesco.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 25px;
+}
+
+
+/* ----------------------------------main---------------------------------------------------------------------- */
+
+    main .container {
+        background-color: var(--color-section);
+         padding-bottom: 35px;
+    }
+
+    main .container h1 {
+        color: #EEEEEE;
+        font-family: var(--text);
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0px;
+        padding: 25px 20px;
+    }
+
+    main .container nav {
+        padding:  0px 40px;
+    }
+
+    main .container nav ul {
+        display: flex;
+        border-bottom: 1px solid #858b96 ;
+        padding-bottom: 20px;
+    }
+
+    main .container nav ul li {
+        list-style: none;
+    }
+
+    main .container nav ul li a {
+        color: #858b96;
+        text-decoration: none;
+        font-size: 12px;
+        font-family: var(--text);
+        margin-right: 40px;
+       
+    }
+
+    main .container nav ul li a:hover {
+        color: #b4bbcb;
+    
+    }
+
+    .container .posters {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, 127px);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+        column-gap: 35px;
+        row-gap: 30px;
+    }
+
+    
+    .container .posters .poster {
+        margin: 0px;
+        width: 127px;
+        height: 199px;
+        position: relative;
+    }
+    
+    .container .posters .poster img {
+       width: 100%;
+       height: 100%;
+    }
+
+    .container .posters .poster .post-overlay {
+      
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       right: 0;
+       left: 0;
+       text-align: center;
+       line-height: 90px;
+       display: none;
+    }
+
+    .container .posters .poster .post-overlay:hover {
+        background-color: var(--color-move);
+        display: inline-block;
+    }
+
+    .container .posters .poster .post-overlay p {
+       font-family: var(--text);
+       font-weight: bold;
+       color: #EEEEEE;
+
+    }
+
+    .container .posters .poster .post-overlay button {
+       background-color: #ec164f;
+       color: #EEEEEE;
+       font-family: var(--text);
+       font-weight: 100;
+       font-size: 13px;
+       height: 35px;
+       width: 100px;
+       border-radius: 50px;
+       border: none;
+       
+    }
+
+
+/* -----------------------------------------------footer------------------------------------- */
+
+    footer {
+        display: flex;
+        justify-content: flex-start;
+        background-color: var(--color-black);
+        align-items: center;
+    
+    }
+
+    footer a {
+        color: var(--color-letter);
+        font-family: var(--text);
+        font-size: 12px;
+        text-decoration: none;
+        padding-left: 35px;
+    }
+
+    footer p {
+        color: #EEEEEE;
+        font-family: var(--text);
+        font-size: 12px;
+        padding-left: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
